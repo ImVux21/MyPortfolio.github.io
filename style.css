@@ -116,7 +116,7 @@ nav .nav-mobile {
 }
 
 .about {
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     position: relative;
     padding: 2.9rem 9.375rem 0;
     display: flex;
@@ -132,7 +132,7 @@ nav .nav-mobile {
     width: 45rem;
     height: 45rem;
     border-radius: 100rem;
-    background: var(--text-color);
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
     right: 0;
     bottom: 0;
     transform: translate(40%, 30%);
@@ -288,12 +288,10 @@ ion-icon {
     align-items: center;
     font-size: 14px;
     font-weight: 300;
-    color: var(--secondary-color);
 }
 
-.service-items-skill:hover, .service-items-skill:hover h1, .service-items-skill:hover p  {
-    background: var(--text-color);
-    color: var(--secondary-color);
+.service-items-skill:hover  {
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
     transform: translateY(-3%);
 }
 
@@ -354,7 +352,7 @@ ion-icon {
     font-size: 2rem;
     font-weight: 700;
     color: var(--secondary-color);
-    background: #00acb5d3;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
     border-radius: inherit;
     overflow: hidden;
     text-align: center;
@@ -367,6 +365,7 @@ ion-icon {
 .work-items-img:hover a {
     height: 100%;
 }
+
 
 .skill {
     padding: 6rem 9.375rem;
@@ -581,7 +580,7 @@ footer {
     font-weight: 400;
     top: 0;
     right: 0;
-    background: #00acb596;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);;
 }
 
 .personal-infor span {
@@ -601,6 +600,12 @@ footer {
 
 .map ion-icon:hover {
     color: var(--text-color);
+}
+
+.copyright {
+    padding: 1rem;
+    background-color: var(--third-color);
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1025px) {
