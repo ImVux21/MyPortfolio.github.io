@@ -603,6 +603,10 @@ footer {
     color: var(--text-color);
 }
 
+a:last-child {
+    display: none;
+}
+
 @media screen and (max-width: 1025px) {
     * {
         line-height: 1;
@@ -824,7 +828,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
     * {
         font-size: 11px;
     }
