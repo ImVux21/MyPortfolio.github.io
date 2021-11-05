@@ -875,6 +875,10 @@ footer {
         flex-direction: column;
     }
 
+    .skill-description {
+        text-align: center;
+    }
+
     .skill-description, .skill-bar {
         width: 100%;
     }
