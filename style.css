@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
 :root {
     --primary-color: #222831;
     --secondary-color: #EEEEEE;
@@ -28,7 +32,7 @@ a {
 
 .description-heading {
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary-color);
 }
 
@@ -39,7 +43,7 @@ a {
 
 .description-heading-secondary {
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--secondary-color);
 }
 
@@ -50,9 +54,6 @@ a {
 }
 
 
-html {
-    font-family: 'Open Sans', sans-serif;
-}
 
 nav {
     padding: 1rem 9.375rem;
@@ -285,7 +286,8 @@ ion-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 300;
     color: var(--secondary-color);
 }
 
@@ -613,7 +615,6 @@ footer {
 
     .about {
         padding: 70px 70px 0;
-        /* height: 400px; */
     }
 
     .about::after {
@@ -752,7 +753,7 @@ footer {
 
     .nav-mobile p {
         margin-top: 30px;
-        font-size: 14px;
+        font-size: 16px;
         font-style: italic;
     }
 
@@ -846,6 +847,10 @@ footer {
         width: 30rem;
         height: 30rem;
         transform: translate(30%, 40%);
+    }
+
+    .download, .btn-primary {
+        text-transform: uppercase;
     }
 
     .service {
