@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 140%;
     transition: all 0.3s cubic-bezier(.6,.4,0,1);
     scroll-behavior: smooth;
@@ -42,13 +42,12 @@ a {
 }
 
 .description-heading-secondary {
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: 700;
     color: var(--secondary-color);
 }
 
 .description-text-secondary {
-    font-size: 1.25rem;
     font-weight: 400;
     color: var(--secondary-color);
 }
@@ -485,10 +484,11 @@ footer {
 }
 
 .contact-info {
+    font-size: 18px;
+    line-height: normal;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    line-height: 1.1;
 }
 
 .contact-form {
@@ -557,6 +557,7 @@ footer {
 }
 
 .map {
+    line-height: normal;
     height: 100%;
     width: 50%;
     position: relative;
@@ -627,12 +628,20 @@ footer {
         height: 33rem;
     }
 
-    .description-text {
-        font-size: 1.2rem;
-    }
-
     .description-heading {
-        font-size: 1.6rem;
+        font-size: 25px;
+    }
+    
+    .description-text {
+        font-size: 18px;
+    }
+    
+    .description-heading-secondary {
+        font-size: 25px;
+    }
+    
+    .description-text-secondary {
+        font-size: 18px;
     }
 
     .about-infor {
