@@ -408,7 +408,7 @@ ion-icon {
 
 .work-items {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0 30px;
 }
 
@@ -787,7 +787,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 801px) {
     * {
         font-size: 14px;
     }
@@ -879,6 +879,26 @@ footer {
         font-weight: 700;
     }
 
+    .nav-mobile ion-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-mobile .menu-item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn-more ion-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .download ion-icon {
+        width: 20px;
+        height: 20px;
+    }
+
     .nav-mobile .logo {
         display: flex;
         justify-content: space-between;
@@ -943,9 +963,21 @@ footer {
     .hero-content {
         padding: 2rem;
     }
+
+    .about {
+        padding: 1rem 1rem 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .work-items {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+    }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 420px) {
     * {
         font-size: 11px;
     }
@@ -1025,6 +1057,7 @@ footer {
 
     .work-items {
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
         gap: 20px;
     }
 
