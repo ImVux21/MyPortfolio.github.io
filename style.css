@@ -114,6 +114,92 @@ nav .nav-mobile {
     display: none;
 }
 
+.wrap-hero-content {
+    position: relative;
+    width: 100%;
+    height: 39rem;
+    background: url(./images/hero1.jpeg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 4rem;
+    background: rgba(255, 255, 255, 0.8);
+    outline: 4px double #FFFFFF;
+    outline-offset: 8px;
+    text-align: center;
+}
+
+.typed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.typed div {
+    animation: text .8s linear infinite alternate;
+}
+
+.typed div:first-child {
+    animation-delay: -0.1s;
+}
+
+.typed div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.typed div:last-child {
+    animation-delay: -0.6s;
+}
+
+@keyframes text {
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.wrap-hero-content a {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+    background: rgba(255,255,255,.6);
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+.wrap-hero-content img {
+    animation: scroll 0.9s ease-in-out infinite;
+}
+
+.wrap-hero-content a:hover {
+    color: #222831af;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    } 50% {
+        transform: translateY(-4px);
+    } 100% {
+        transform: translateY(0);
+    }
+}
+
 .about {
     background: var(--secondary-color);
     position: relative;
@@ -178,41 +264,6 @@ nav .nav-mobile {
     color: var(--secondary-color);
 }
 
-.wrap-hero-content {
-    position: relative;
-    width: 100%;
-    height: 39rem;
-    background: url(./images/hero1.jpeg) no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-content {
-    padding: 4rem;
-    background: rgba(255, 255, 255, 0.8);
-    outline: 4px double #FFFFFF;
-    outline-offset: 8px;
-    text-align: center;
-}
-
-.wrap-hero-content a {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.795);
-}
-
-.wrap-hero-content a:hover {
-    color: rgba(255, 255, 255, 0.438);
-}
 
 .about-image {
     display: block;
@@ -888,6 +939,10 @@ footer {
     .about {
         padding: 3rem 0 0 2rem; 
     }
+
+    .hero-content {
+        padding: 2rem;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -897,6 +952,11 @@ footer {
 
     nav {
         padding: 1rem;
+    }
+
+    .nav-mobile .menu-item img {
+        width: 35px;
+        height: 35px;
     }
 
     .about {
@@ -919,6 +979,11 @@ footer {
         text-transform: uppercase;
     }
 
+    .download ion-icon {
+        width: 20px;
+        height: 20px;
+    }
+
     .service {
         max-height: 1400px;
         padding: 2rem 1.5rem;
@@ -926,6 +991,11 @@ footer {
 
     .service h1 {
         font-size: 27px;
+    }
+
+    .btn-more ion-icon {
+        width: 20px;
+        height: 20px;
     }
 
     .items {

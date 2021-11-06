@@ -23,6 +23,9 @@
                 </a>
                 <ul class="menu description-text">
                     <li class="menu-item">
+                        <a href="#home" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu-item">
                         <a href="#about" class="menu-link">About</a>
                     </li>
                     <li class="menu-item">
@@ -55,6 +58,10 @@
                             <ion-icon name="close"></ion-icon>
                         </div>
                     </div>
+                    <a href="#home" class="menu-item">
+                        <img src="https://img.icons8.com/ios/50/000000/home--v3.png"/>
+                        <span class="menu-link">Home</span>
+                    </a>
                     <a href="#about" class="menu-item">
                         <img src="https://img.icons8.com/ios/50/000000/user--v1.png"/>
                         <span class="menu-link">About</span>
@@ -76,13 +83,15 @@
 
             </nav>
             <main>
-                <div class="wrap-hero-content">
+                <div class="wrap-hero-content" id="home">
                     <div class="hero-content">
                         <h1 class="description-heading">Hello</h1>
                         <br>
-                        <span class="description-text">I'm Web Developer</span>
+                        <div class="typed">
+                            <div class="description-text">I'm</div> <div class="description-text">Web</div> <div class="description-text">Developer</div>
+                        </div>
                     </div>
-                    <a href="#about"><ion-icon name="arrow-round-down"></ion-icon>Click to scroll down</a>
+                    <a href="#about"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-scroll-touch-gestures-those-icons-lineal-those-icons-4.png"/><span>Click to scroll down</span></a>
                 </div>
             
                 <section class="about" id="about">
@@ -251,7 +260,7 @@
         </div>
         <div class="copyright">
             <p>Copyright © 2021 ImVux21. All rights reserved.</p>
-            <a href="https://icons8.com/icon/23264/user">User icon by Icons8</a>
+            <a href="https://icons8.com/icon/23264/user">Icon by Icons8 and Ion-Icon</a>
         </div>
     
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
