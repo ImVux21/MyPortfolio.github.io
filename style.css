@@ -259,6 +259,17 @@ nav .nav-mobile {
     height: 25px;
 }
 
+.download:hover ion-icon {
+    animation: download 1s ease infinite; 
+}
+
+@keyframes download {
+    to {
+        transform: translateY(-4px);
+    }
+}
+
+
 .btn-primary:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -384,6 +395,16 @@ ion-icon {
 .btn-more ion-icon {
     width: 30px;
     height: 30px;
+}
+
+.service-items-skill:hover ion-icon[name="arrow-round-forward"] {
+    animation: discovery 1s ease-in-out infinite;
+}
+
+@keyframes discovery {
+    to {
+        transform: translateX(6px);
+    }
 }
 
 .work {
