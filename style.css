@@ -52,7 +52,38 @@ a {
     color: var(--secondary-color);
 }
 
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    z-index: 100000000;
+    display: block;
+    overflow: hidden;
+    background: var(--primary-color);
+}
 
+.name-loader {
+    font-family: 'Shadows Into Light', cursive;
+    position: absolute;
+    margin-bottom: 1rem;
+    font-size: 8.2rem;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--secondary-color);
+    bottom: 0;
+    animation: loading 1s ease-out alternate;
+}
+
+@keyframes loading {
+    0% {
+        height: 0;
+        color: rgba(255, 255, 255, 0.041);
+    } 100% {
+        height: 14rem;
+        color: white;
+    }
+}
 
 nav {
     padding: 1rem 9.375rem;
@@ -392,12 +423,12 @@ ion-icon {
     transform: translateY(-3%);
 }
 
-.btn-more ion-icon {
-    width: 30px;
-    height: 30px;
+.btn-more img {
+    width: 35px;
+    height: 35px;
 }
 
-.service-items-skill:hover ion-icon[name="arrow-round-forward"] {
+.service-items-skill:hover img {
     animation: discovery 1s ease-in-out infinite;
 }
 
@@ -488,16 +519,33 @@ ion-icon {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     gap: 30px;
     width: 50%;
 }
 
 .skill-bar {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .skill-bar li {
-    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.languages img {
+    width: 20px;
+    height: 20px;
 }
 
 .bar {
@@ -906,8 +954,8 @@ footer {
     }
 
     .nav-mobile .menu-item img {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 
     .btn-more ion-icon {
@@ -991,6 +1039,10 @@ footer {
         gap: 20px;
     }
 
+    .skill {
+        padding-top: 140px;
+    }
+
     .work-items {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
@@ -1062,10 +1114,6 @@ footer {
     .skill {
         padding: 3rem 1.5rem;
         flex-direction: column;
-    }
-
-    .skill-description {
-        text-align: center;
     }
 
     .skill-description, .skill-bar {

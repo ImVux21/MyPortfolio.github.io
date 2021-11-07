@@ -8,11 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>ĐỖ DOÃN VŨ | Portfolio</title>
 </head>
-<body>
+<body class="preloading">
+        <div class="loader">
+            <div class="name-loader">DO DOAN VU | Portfolio  . . .</div>
+        </div>
+
         <div class="wrapper">
             <nav>
                 <a href="">
@@ -59,23 +66,23 @@
                         </div>
                     </div>
                     <a href="#home" class="menu-item">
-                        <img src="https://img.icons8.com/ios/50/000000/home--v3.png"/>
+                        <img src="./images/home.svg"/>
                         <span class="menu-link">Home</span>
                     </a>
                     <a href="#about" class="menu-item">
-                        <img src="https://img.icons8.com/ios/50/000000/user--v1.png"/>
+                        <img src="./images/user.svg"/>
                         <span class="menu-link">About</span>
                     </a>
                     <a href="#skill" class="menu-item">
-                        <img src="https://img.icons8.com/ios/50/000000/creativity.png"/>
+                        <img src="./images/bulb-on.svg"/>
                         <span class="menu-link">My Skills</span>
                     </a>
                     <a href="#work" class="menu-item">
-                        <img src="https://img.icons8.com/ios/50/000000/work.png"/>
+                        <img src="./images/briefcase-alt.svg"/>
                         <span class="menu-link">Works</span>
                     </a>
                     <a href="#contact" class="menu-item">
-                        <img src="https://img.icons8.com/ios/50/000000/phone-not-being-used.png"/>
+                        <img src="./images/at.svg"/>
                         <span class="menu-link">Contact</span>
                     </a>
                     <p>"Time means a lot to me because, you see, I, too, am also a learner and am often lost in the joy of forever developing and simplifying. If you love life, don’t waste time, for time is what life is made up of." <span>   — Bruce Lee</span></p>
@@ -137,7 +144,7 @@
                                             <p class="description-text-secondary">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
                                             <div class="btn-more">
                                                 <a href="#work">Discovery More</a>
-                                                <ion-icon name="arrow-round-forward"></ion-icon>
+                                                <img src="./images/double-caret-right-small.svg" alt="">
                                             </div>
                                         </div>
                                     </a>
@@ -148,7 +155,7 @@
                                             <p class="description-text-secondary">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                                             <div class="btn-more">
                                                 <a href="#work">Discovery More</a>
-                                                <ion-icon name="arrow-round-forward"></ion-icon>
+                                                <img src="./images/double-caret-right-small.svg" alt="">
                                             </div>
                                         </div>
                                     </a>
@@ -163,23 +170,38 @@
                     </div>
                     <div class="skill-bar">
                         <li>
-                            <h3 class="description-text">HTML5</h3>
+                            <div class="languages">
+                                <img src="./images/html5.svg" alt="">
+                                <h3 class="description-text">HTML5</h3>
+                            </div>
                             <span class="bar"><span class="html"></span></span>
                         </li>
                         <li>
-                            <h3 class="description-text">CSS3</h3>
+                            <div class="languages">
+                                <img src="./images/css3.svg" alt="">
+                                <h3 class="description-text">CSS3</h3>
+                            </div>
                             <span class="bar"><span class="css"></span></span>
                         </li>
                         <li>
-                            <h3 class="description-text">JAVASCRIPT</h3>
+                            <div class="languages">
+                                <img src="./images/javascript.svg" alt="">
+                                <h3 class="description-text">JAVASCRIPT</h3>
+                            </div>
                             <span class="bar"><span class="js"></span></span>
                         </li>
                         <li> 
-                            <h3 class="description-text">PHOTOSHOP</h3>
+                            <div class="languages">
+                                <img src="./images/figma.svg" alt="">
+                                <h3 class="description-text">FIGMA</h3>
+                            </div>
                             <span class="bar"><span class="pts"></span></span>
                         </li>
                         <li>
-                            <h3 class="description-text">FIGMA</h3>
+                            <div class="languages">
+                                <img src="./images/paintbrush.svg" alt="">
+                                <h3 class="description-text">PHOTOSHOP</h3>
+                            </div>
                             <span class="bar"><span class="figma"></span></span>
                         </li>
                     </div>
@@ -260,9 +282,10 @@
         </div>
         <div class="copyright">
             <p>Copyright © 2021 ImVux21. All rights reserved.</p>
-            <a href="https://icons8.com/icon/23264/user">Icon by Icons8 and Ion-Icon</a>
         </div>
     
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
