@@ -257,7 +257,6 @@ nav .nav-mobile {
     padding: 2.9rem 9.375rem 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 0 2.5rem;
     overflow: hidden;
 }
@@ -265,13 +264,13 @@ nav .nav-mobile {
 .about::after {
     content: "";
     position: absolute;
-    width: 45rem;
-    height: 45rem;
+    width: 40rem;
+    height: 40rem;
     border-radius: 100rem;
     background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
     right: 0;
     bottom: 0;
-    transform: translate(40%, 30%);
+    transform: translate(30%, 20%);
 }
 
 .about-infor {
@@ -279,7 +278,7 @@ nav .nav-mobile {
     flex-direction: column;
     align-items: flex-start;
     gap: 30px 0;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .btn {
@@ -328,6 +327,7 @@ nav .nav-mobile {
 
 
 .about-image {
+    width: 100%;
     z-index: 15;
 }
 
@@ -339,7 +339,11 @@ nav .nav-mobile {
 }
 
 .about-social {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     z-index: 100;
+    margin-bottom: 30px;
 }
 
 .menu-link ion-icon {
@@ -887,7 +891,6 @@ footer {
 
 @media screen and (max-width: 1025px) {
     * {
-        line-height: 120%;
         font-size: 16px;
     }
 
@@ -1136,7 +1139,7 @@ footer {
     
     .skill {
         flex-direction: column;
-        padding: 8rem 6rem;
+        padding: 12rem 6rem 8rem;
     }
 
     .skill-description {
@@ -1170,6 +1173,10 @@ footer {
         padding: 1rem 1rem 0;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .service {
+        max-height: 950px;
     }
 
     .skill {
@@ -1271,6 +1278,12 @@ footer {
         width: 100%;
     }
 
+}
+
+@media screen and (max-width: 321px) {
+    .service {
+        max-height: 1800px;
+    }
 }
 
 
