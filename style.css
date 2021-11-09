@@ -594,7 +594,7 @@ ion-icon {
     font-weight: 700;
     background: var(--third-color);
     color: var(--secondary-color);
-    padding: 5px;
+    padding: 8px 3px;
     position: relative;
     border-radius: 15px;
     transform: translateX(-12px);
@@ -603,11 +603,11 @@ ion-icon {
 .percent::after {
     content: "";
     position: absolute;
-    width: 21px;
-    height: 21px;
+    width: 17px;
+    height: 17px;
     background-color: var(--third-color);
     transform: rotate(45deg);
-    left: 6.5px;
+    left: 7px;
     bottom: -3px;
     z-index: -1;
 }
@@ -641,7 +641,7 @@ ion-icon {
     0% {
         width: 30px;
     } 100% {
-        width: calc(90% + 12px);
+        width: calc(90% + 25px);
     }
 }
 
@@ -649,7 +649,7 @@ ion-icon {
     0% {
         width: 30px;
     } 100% {
-        width: calc(80% + 12px);
+        width: calc(80% + 25px);
     }
 }
 
@@ -657,7 +657,7 @@ ion-icon {
     0% {
         width: 30px;
     } 100% {
-        width: calc(30% + 12px);
+        width: calc(30% + 25px);
     }
 }
 
@@ -665,7 +665,7 @@ ion-icon {
     0% {
         width: 30px;
     } 100% {
-        width: calc(40% + 12px);
+        width: calc(40% + 25px);
     }
 }
 
