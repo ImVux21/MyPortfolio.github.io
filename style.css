@@ -17,6 +17,10 @@ html {
     --third-color: #393E46;
 }
 
+h3 {
+    margin: 0;
+}
+
 ion-icon {
     cursor: pointer;
 }
@@ -324,9 +328,6 @@ nav .nav-mobile {
 
 
 .about-image {
-    display: block;
-    width: 100%;
-    height: 100%;
     z-index: 15;
 }
 
@@ -577,11 +578,99 @@ ion-icon {
     background: linear-gradient(-90deg ,var(--primary-color), var(--third-color), var(--secondary-color) );
 }
 
+.wrap-percent {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.percent {
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 700;
+    background: var(--third-color);
+    color: var(--secondary-color);
+    padding: 5px;
+    position: relative;
+    border-radius: 15px;
+    transform: translateX(-12px);
+}
+
+.percent::after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: var(--third-color);
+    transform: rotate(45deg);
+    left: 6.5px;
+    bottom: -3px;
+    z-index: -1;
+}
+
+.html-percent {
+    animation: percentHtml 6s infinite ease-in-out;
+    transition-delay: 2s;
+}
+
+.css-percent {
+    animation: percentCss 6s infinite ease-in-out;
+    transition-delay: 2s;
+}
+
+.js-percent {
+    animation: percentJs 6s infinite ease-in-out;
+    transition-delay: 2s;
+}
+
+.figma-percent {
+    animation: percentFigma 6s infinite ease-in-out;
+    transition-delay: 2s;
+}
+
+.pts-percent {
+    animation: percentFigma 6s infinite ease-in-out;
+    transition-delay: 2s;
+}
+
+@keyframes percentHtml {
+    0% {
+        width: 30px;
+    } 100% {
+        width: calc(90% + 12px);
+    }
+}
+
+@keyframes percentCss {
+    0% {
+        width: 30px;
+    } 100% {
+        width: calc(80% + 12px);
+    }
+}
+
+@keyframes percentJs {
+    0% {
+        width: 30px;
+    } 100% {
+        width: calc(30% + 12px);
+    }
+}
+
+@keyframes percentFigma {
+    0% {
+        width: 30px;
+    } 100% {
+        width: calc(40% + 12px);
+    }
+}
+
 .html {
     width: 90%;
     animation: html 6s infinite ease-in-out;
     transition-delay: 2s;
 }
+
 .css {
     width: 80%;
     animation: css 6s infinite ease-in-out;
@@ -857,6 +946,10 @@ footer {
         gap: 20px;
     }
 
+    .skill {
+        padding: 4rem 6rem;
+    }
+
     .work {
         padding: 5rem 8rem;
     }
@@ -869,13 +962,17 @@ footer {
         font-size: 1.5rem;
     }
 
+    footer {
+        padding: 5rem;
+    }
+
     .contact-form {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 770px) {
     * {
         font-size: 14px;
     }
@@ -1032,9 +1129,18 @@ footer {
         max-height: 780px;
         flex-direction:column;
     }
-
+    
     .skill {
-        padding: 4rem;
+        flex-direction: column;
+        padding: 8rem 6rem;
+    }
+
+    .skill-description {
+        width: 100%;
+    }
+
+    .skill-bar {
+        width: 100%;
     }
 
     .work {
@@ -1135,8 +1241,7 @@ footer {
     }
 
     .skill {
-        padding: 3rem 1.5rem;
-        flex-direction: column;
+        padding: 8rem 3rem 6rem;
     }
 
     .skill-description, .skill-bar {
