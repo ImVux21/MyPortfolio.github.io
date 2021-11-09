@@ -594,7 +594,7 @@ ion-icon {
     font-weight: 700;
     background: var(--third-color);
     color: var(--secondary-color);
-    padding: 8px 3px;
+    padding: 6px 3px 8px;
     position: relative;
     border-radius: 15px;
     transform: translateX(-12px);
