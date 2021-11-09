@@ -30,6 +30,10 @@ a {
     color: inherit;
 }
 
+input {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
 .description-heading {
     font-size: 30px;
     font-weight: 700;
@@ -730,7 +734,7 @@ footer {
 .form-input:not(:placeholder-shown) + .form-label, .form-input:focus + .form-label {
     display: inline-block;
     top: 0;
-    padding: 7px;
+    padding: 0 7px;
     background: white;
     color: rgb(136,131,159);
 }
