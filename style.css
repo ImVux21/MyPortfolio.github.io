@@ -887,7 +887,7 @@ footer {
 
 @media screen and (max-width: 1025px) {
     * {
-        line-height: 1;
+        line-height: 120%;
         font-size: 16px;
     }
 
@@ -940,6 +940,10 @@ footer {
     .menu-social ion-icon {
         width: 30px;
         height: 30px;
+    }
+
+    .service-infor {
+        gap: 10px;
     }
 
     .service-items .items {
