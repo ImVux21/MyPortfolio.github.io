@@ -526,7 +526,7 @@ ion-icon {
 
 
 .skill {
-    padding: 6rem 9.375rem;
+    padding: 5rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -548,7 +548,7 @@ ion-icon {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .skill-bar li {
