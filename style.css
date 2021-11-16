@@ -94,11 +94,11 @@ input {
         height: 16rem;
         color: rgba(255, 255, 255, 0.041);
     } 50% {
-        height: 9rem;
+        height: 12rem;
         color: var(--secondary-color);
         transition-delay: 8s;
     } 80% {
-        height: 9rem;
+        height: 12rem;
         color: var(--secondary-color);
         transition-delay: 8s;
     } 100% {
