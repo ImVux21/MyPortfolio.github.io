@@ -1043,6 +1043,10 @@ footer {
         color: var(--primary-color);
     }
 
+    .logo span {
+        font-size: 16px;
+    }
+
     .overlay {
         position: fixed;
         inset: 0;
