@@ -1099,11 +1099,6 @@ footer {
         align-items: center;
     }
 
-    .nav-mobile .menu-item:hover {
-        border-bottom: 3px solid var(--primary-color);
-        color: var(--primary-color);
-    }
-
     .nav-mobile .logo-text {
         display: flex;
         justify-content: center;
@@ -1111,7 +1106,6 @@ footer {
     }
 
     .nav-mobile .menu-item {
-        font-size: 16px;
         font-weight: 700;
         display: flex;
         justify-content: flex-start;
@@ -1120,9 +1114,12 @@ footer {
         margin-top: 15px;
     }
 
+    .nav-mobile .menu-item .menu-link {
+        font-size: 16px;
+    }
+
     .menu .menu-item:hover {
         border-left: 3px solid var(--primary-color);
-        border-bottom: none;
         color: var(--primary-color);
         padding-left: 8px;
         padding-bottom: 0;
