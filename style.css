@@ -155,12 +155,6 @@ nav .nav-mobile {
     color: var(--secondary-color);
 }
 
-.menu .menu-item:hover {
-    border-bottom: 3px solid var(--secondary-color);
-    color: var(--secondary-color);
-    padding-bottom: 8px;
-}
-
 .hamburger-menu {
     display: none;
 }
@@ -889,6 +883,15 @@ footer {
     color: var(--secondary-color);
 }
 
+@media screen and (min-width: 1025px) {
+    .menu .menu-item:hover {
+        border-bottom: 3px solid var(--secondary-color);
+        color: var(--secondary-color);
+        padding-bottom: 8px;
+    }
+    
+}
+
 @media screen and (max-width: 1025px) {
     * {
         font-size: 16px;
@@ -1128,7 +1131,6 @@ footer {
         border-left: 3px solid var(--primary-color);
         color: var(--primary-color);
         padding-left: 8px;
-        padding-bottom: 0;
     }
 
     .about {
